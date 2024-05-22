@@ -1,0 +1,472 @@
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~ (master)
+$cgit clone https://github.com/senthilkumarIRTT/JFSD-Mini-Project.git
+Cloning into 'JFSD-Mini-Project'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), 12.74 KiB | 501.00 KiB/s, done.
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~ (master)
+$ cd ~/Desktop/
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~ (master)
+$ cd ~/JFSD-Mini-Project
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Senthil/JFSD-Mini-Project/.git/
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ dir
+LICENSE  README.md
+
+*****Copy folder you to commit to git hub local repository
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git add .
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git commit -m "my commit"
+[main 7ddd5d3] my commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 JSPDemoExample.docx
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git push origin main --force
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 9.71 KiB | 2.43 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/senthilkumarIRTT/JFSD-Mini-Project.git
+   aeec58e..7ddd5d3  main -> main
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ ls
+JSPDemoExample.docx  LICENSE  README.md
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git add .
+warning: adding embedded git repository: Spring_Boot_Project-master
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Spring_Boot_Project-master
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Spring_Boot_Project-master
+hint:
+hint: See "git help submodule" for more information.
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$  git submodule add https://github.com/senthilkumarIRTT/JFSD-Mini-Project Spring_Boot_Project-master
+fatal: 'Spring_Boot_Project-master' already exists in the index
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ ls
+JSPDemoExample.docx  LICENSE  README.md  Spring_Boot_Project-master/
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Spring_Boot_Project-master
+
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git push origin main --force
+Everything up-to-date
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git add .
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git commit -m "my commit"
+[main bdf9f24] my commit
+ 1 file changed, 1 insertion(+)
+ create mode 160000 Spring_Boot_Project-master
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git push origin main --force
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 275 bytes | 275.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/senthilkumarIRTT/JFSD-Mini-Project.git
+   7ddd5d3..bdf9f24  main -> main
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git add .
+warning: in the working copy of '.mvn/wrapper/maven-wrapper.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mvnw', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mvnw.cmd', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/Exceptions.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/SsBeautyProductsApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/controllers/AdminController.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/controllers/HomeController.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/controllers/ProductController.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/controllers/UserController.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/entities/Admin.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/entities/Product.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/entities/User.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/loginCredentials/AdminLogin.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/repositories/AdminRepository.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/repositories/ProductRepository.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/repositories/UserRepository.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/services/AdminService.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/services/ProductService.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/business/services/UserService.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/application.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/About.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Add_Admin.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Add_Product.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Add_User.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Admin_page.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/All_Product.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Home.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Locate_us.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Login.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Navigation.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Product_Selected.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Products.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Update_Admin.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Update_Product.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/static/css/Update_User.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/About.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Add_Admin.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Add_Product.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Add_User.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Admin_page.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/All_Product.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Locate_us.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Login.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Navigation.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Product_Selected.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Products.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Update_Admin.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Update_Product.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/Update_User.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/templates/exception.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/test/java/com/business/SsBeautyProductsApplicationTests.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/META-INF/maven/com.business/SS_Beauty_Products/pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/application.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/About.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Add_Admin.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Add_Product.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Add_User.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Admin_page.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/All_Product.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Home.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Locate_us.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Login.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Navigation.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Product_Selected.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Products.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Update_Admin.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Update_Product.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/static/css/Update_User.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/About.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Add_Admin.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Add_Product.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Add_User.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Admin_page.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/All_Product.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Locate_us.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Login.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Navigation.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Product_Selected.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Products.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Update_Admin.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Update_Product.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/Update_User.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'target/classes/templates/exception.html', LF will be replaced by CRLF the next time Git touches it
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git commit -m "my commit"
+[main a50124f] my commit
+ 148 files changed, 4007 insertions(+), 2 deletions(-)
+ create mode 100644 .classpath
+ create mode 100644 .mvn/wrapper/maven-wrapper.jar
+ create mode 100644 .mvn/wrapper/maven-wrapper.properties
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.core.resources.prefs
+ create mode 100644 .settings/org.eclipse.jdt.apt.core.prefs
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 .settings/org.eclipse.m2e.core.prefs
+ create mode 100644 .settings/org.springframework.ide.eclipse.prefs
+ delete mode 100644 JSPDemoExample.docx
+ delete mode 160000 Spring_Boot_Project-master
+ create mode 100644 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/business/Exceptions.java
+ create mode 100644 src/main/java/com/business/SsBeautyProductsApplication.java
+ create mode 100644 src/main/java/com/business/controllers/AdminController.java
+ create mode 100644 src/main/java/com/business/controllers/HomeController.java
+ create mode 100644 src/main/java/com/business/controllers/ProductController.java
+ create mode 100644 src/main/java/com/business/controllers/UserController.java
+ create mode 100644 src/main/java/com/business/entities/Admin.java
+ create mode 100644 src/main/java/com/business/entities/Product.java
+ create mode 100644 src/main/java/com/business/entities/User.java
+ create mode 100644 src/main/java/com/business/loginCredentials/AdminLogin.java
+ create mode 100644 src/main/java/com/business/repositories/AdminRepository.java
+ create mode 100644 src/main/java/com/business/repositories/ProductRepository.java
+ create mode 100644 src/main/java/com/business/repositories/UserRepository.java
+ create mode 100644 src/main/java/com/business/services/AdminService.java
+ create mode 100644 src/main/java/com/business/services/ProductService.java
+ create mode 100644 src/main/java/com/business/services/UserService.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/main/resources/static/Images/L1.jpg
+ create mode 100644 src/main/resources/static/Images/backgroundBlack.png
+ create mode 100644 src/main/resources/static/Images/backgroundImage.png
+ create mode 100644 src/main/resources/static/Images/c1.jpg
+ create mode 100644 src/main/resources/static/Images/c2.jpg
+ create mode 100644 src/main/resources/static/Images/e1.jpg
+ create mode 100644 src/main/resources/static/Images/g1.jpg
+ create mode 100644 src/main/resources/static/Images/kit.jpg
+ create mode 100644 src/main/resources/static/Images/logo-color.png
+ create mode 100644 src/main/resources/static/Images/logo.jpg
+ create mode 100644 src/main/resources/static/Images/m1.jpg
+ create mode 100644 src/main/resources/static/Images/s1.jpg
+ create mode 100644 src/main/resources/static/Images/s3.jpg
+ create mode 100644 src/main/resources/static/Images/sc.jpg
+ create mode 100644 src/main/resources/static/Images/shampo1.jpg
+ create mode 100644 src/main/resources/static/Videos/homeBackground.mp4
+ create mode 100644 src/main/resources/static/css/About.css
+ create mode 100644 src/main/resources/static/css/Add_Admin.css
+ create mode 100644 src/main/resources/static/css/Add_Product.css
+ create mode 100644 src/main/resources/static/css/Add_User.css
+ create mode 100644 src/main/resources/static/css/Admin_page.css
+ create mode 100644 src/main/resources/static/css/All_Product.css
+ create mode 100644 src/main/resources/static/css/Home.css
+ create mode 100644 src/main/resources/static/css/Locate_us.css
+ create mode 100644 src/main/resources/static/css/Login.css
+ create mode 100644 src/main/resources/static/css/Navigation.css
+ create mode 100644 src/main/resources/static/css/Product_Selected.css
+ create mode 100644 src/main/resources/static/css/Products.css
+ create mode 100644 src/main/resources/static/css/Update_Admin.css
+ create mode 100644 src/main/resources/static/css/Update_Product.css
+ create mode 100644 src/main/resources/static/css/Update_User.css
+ create mode 100644 src/main/resources/templates/About.html
+ create mode 100644 src/main/resources/templates/Add_Admin.html
+ create mode 100644 src/main/resources/templates/Add_Product.html
+ create mode 100644 src/main/resources/templates/Add_User.html
+ create mode 100644 src/main/resources/templates/Admin_page.html
+ create mode 100644 src/main/resources/templates/All_Product.html
+ create mode 100644 src/main/resources/templates/Home.html
+ create mode 100644 src/main/resources/templates/Locate_us.html
+ create mode 100644 src/main/resources/templates/Login.html
+ create mode 100644 src/main/resources/templates/Navigation.html
+ create mode 100644 src/main/resources/templates/Product_Selected.html
+ create mode 100644 src/main/resources/templates/Products.html
+ create mode 100644 src/main/resources/templates/Update_Admin.html
+ create mode 100644 src/main/resources/templates/Update_Product.html
+ create mode 100644 src/main/resources/templates/Update_User.html
+ create mode 100644 src/main/resources/templates/exception.html
+ create mode 100644 src/test/java/com/business/SsBeautyProductsApplicationTests.java
+ create mode 100644 target/classes/META-INF/MANIFEST.MF
+ create mode 100644 target/classes/META-INF/maven/com.business/SS_Beauty_Products/pom.properties
+ create mode 100644 target/classes/META-INF/maven/com.business/SS_Beauty_Products/pom.xml
+ create mode 100644 target/classes/application.properties
+ create mode 100644 target/classes/com/business/Exceptions.class
+ create mode 100644 target/classes/com/business/SsBeautyProductsApplication.class
+ create mode 100644 target/classes/com/business/controllers/AdminController.class
+ create mode 100644 target/classes/com/business/controllers/HomeController.class
+ create mode 100644 target/classes/com/business/controllers/ProductController.class
+ create mode 100644 target/classes/com/business/controllers/UserController.class
+ create mode 100644 target/classes/com/business/entities/Admin.class
+ create mode 100644 target/classes/com/business/entities/Product.class
+ create mode 100644 target/classes/com/business/entities/User.class
+ create mode 100644 target/classes/com/business/loginCredentials/AdminLogin.class
+ create mode 100644 target/classes/com/business/repositories/AdminRepository.class
+ create mode 100644 target/classes/com/business/repositories/ProductRepository.class
+ create mode 100644 target/classes/com/business/repositories/UserRepository.class
+ create mode 100644 target/classes/com/business/services/AdminService.class
+ create mode 100644 target/classes/com/business/services/ProductService.class
+ create mode 100644 target/classes/com/business/services/UserService.class
+ create mode 100644 target/classes/static/Images/L1.jpg
+ create mode 100644 target/classes/static/Images/backgroundBlack.png
+ create mode 100644 target/classes/static/Images/backgroundImage.png
+ create mode 100644 target/classes/static/Images/c1.jpg
+ create mode 100644 target/classes/static/Images/c2.jpg
+ create mode 100644 target/classes/static/Images/e1.jpg
+ create mode 100644 target/classes/static/Images/g1.jpg
+ create mode 100644 target/classes/static/Images/kit.jpg
+ create mode 100644 target/classes/static/Images/logo-color.png
+ create mode 100644 target/classes/static/Images/logo.jpg
+ create mode 100644 target/classes/static/Images/m1.jpg
+ create mode 100644 target/classes/static/Images/s1.jpg
+ create mode 100644 target/classes/static/Images/s3.jpg
+ create mode 100644 target/classes/static/Images/sc.jpg
+ create mode 100644 target/classes/static/Images/shampo1.jpg
+ create mode 100644 target/classes/static/Videos/homeBackground.mp4
+ create mode 100644 target/classes/static/css/About.css
+ create mode 100644 target/classes/static/css/Add_Admin.css
+ create mode 100644 target/classes/static/css/Add_Product.css
+ create mode 100644 target/classes/static/css/Add_User.css
+ create mode 100644 target/classes/static/css/Admin_page.css
+ create mode 100644 target/classes/static/css/All_Product.css
+ create mode 100644 target/classes/static/css/Home.css
+ create mode 100644 target/classes/static/css/Locate_us.css
+ create mode 100644 target/classes/static/css/Login.css
+ create mode 100644 target/classes/static/css/Navigation.css
+ create mode 100644 target/classes/static/css/Product_Selected.css
+ create mode 100644 target/classes/static/css/Products.css
+ create mode 100644 target/classes/static/css/Update_Admin.css
+ create mode 100644 target/classes/static/css/Update_Product.css
+ create mode 100644 target/classes/static/css/Update_User.css
+ create mode 100644 target/classes/templates/About.html
+ create mode 100644 target/classes/templates/Add_Admin.html
+ create mode 100644 target/classes/templates/Add_Product.html
+ create mode 100644 target/classes/templates/Add_User.html
+ create mode 100644 target/classes/templates/Admin_page.html
+ create mode 100644 target/classes/templates/All_Product.html
+ create mode 100644 target/classes/templates/Home.html
+ create mode 100644 target/classes/templates/Locate_us.html
+ create mode 100644 target/classes/templates/Login.html
+ create mode 100644 target/classes/templates/Navigation.html
+ create mode 100644 target/classes/templates/Product_Selected.html
+ create mode 100644 target/classes/templates/Products.html
+ create mode 100644 target/classes/templates/Update_Admin.html
+ create mode 100644 target/classes/templates/Update_Product.html
+ create mode 100644 target/classes/templates/Update_User.html
+ create mode 100644 target/classes/templates/exception.html
+ create mode 100644 target/test-classes/com/business/SsBeautyProductsApplicationTests.class
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git push origin main --force
+Enumerating objects: 147, done.
+Counting objects: 100% (147/147), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (132/132), done.
+Writing objects: 100% (147/147), 6.92 MiB | 1.02 MiB/s, done.
+Total 147 (delta 16), reused 4 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (16/16), done.
+To https://github.com/senthilkumarIRTT/JFSD-Mini-Project.git
+ + 47693ad...a50124f main -> main (forced update)
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ ls
+LICENSE  README.md  mvnw*  mvnw.cmd  pom.xml  src/  target/
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ cd src
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project/src (main)
+$ dir
+main  test
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project/src (main)
+$ cd main
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project/src/main (main)
+$ dir
+java  resources
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ ls
+'E-Commerce Business Management Application_Project_Documentation.docx'
+'E-Commerce Business Management Application_Project_Documentation.pdf'
+ LICENSE
+ README.md
+ mvnw*
+ mvnw.cmd
+ pom.xml
+ src/
+ target/
+'~$Commerce Business Management Application_Project_Documentation.docx'
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git add E-Commerce Business Management Application_Project_Documentation.docx
+fatal: pathspec 'E-Commerce' did not match any files
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ dir
+E-Commerce\ Business\ Management\ Application_Project_Documentation.docx
+E-Commerce\ Business\ Management\ Application_Project_Documentation.pdf
+LICENSE
+README.md
+mvnw
+mvnw.cmd
+pom.xml
+src
+target
+~$Commerce\ Business\ Management\ Application_Project_Documentation.docx
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git add E-Commerce\ Business\ Management\ Application_Project_Documentation.docx
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git add E-Commerce\ Business\ Management\ Application_Project_Documentation.pdf
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git commit -m "my commit"
+[main ebe14d0] my commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 E-Commerce Business Management Application_Project_Documentation.docx
+ create mode 100644 E-Commerce Business Management Application_Project_Documentation.pdf
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ~$Commerce Business Management Application_Project_Documentation.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$ git push origin main --force
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.75 MiB | 1.10 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/senthilkumarIRTT/JFSD-Mini-Project.git
+   a50124f..ebe14d0  main -> main
+
+Senthil@DESKTOP-MTJ23B8 MINGW64 ~/JFSD-Mini-Project (main)
+$
