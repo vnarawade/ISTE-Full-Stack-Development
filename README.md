@@ -29,7 +29,7 @@ Functional Module:
 
 Installation:
 1. Clone the repository : $ git clone 
-https://github.com/sujataoak799/ISTE-JFSD-Mini-Project or Download the zip
+https://github.com/vnarawade/ISTE-Full-Stack-Development or Download the zip
 2. Import the project inside Eclipse :
 o Open Eclipse > file > import > maven > existing project > browse > finish .
 3. Make sure you are in the Spring_Boot_Project-master  directory.
